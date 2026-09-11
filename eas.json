@@ -1,0 +1,33 @@
+{
+  "cli": {
+    "version": ">= 5.0.0",
+    "promptToConfigurePushNotifications": false
+  },
+  "build": {
+    "production": {
+      "node": "18.13.0",
+      "npm": "9.2.0"
+    },
+    "preview": {
+      "node": "18.13.0",
+      "npm": "9.2.0"
+    },
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "your-apple-id@example.com",
+        "ascAppId": "your-app-id",
+        "appleTeamId": "your-team-id"
+      },
+      "android": {
+        "serviceAccount": "path/to/service-account.json",
+        "track": "production"
+      }
+    }
+  }
+}
